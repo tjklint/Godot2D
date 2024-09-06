@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bp5jw5g6juins"]
 
 [ext_resource type="Texture2D" uid="uid://ci535nvwnyuyh" path="res://assets/sprites/slime_green.png" id="1_cqia1"]
-[ext_resource type="Script" path="res://slime.gd" id="1_fecau"]
+[ext_resource type="Script" path="res://scripts/slime.gd" id="1_fecau"]
 [ext_resource type="PackedScene" uid="uid://dljwpmpkwtow5" path="res://scenes/killzone.tscn" id="2_2m8is"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vdcuk"]
