@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://duesdmxby4flc"]
+[gd_scene load_steps=6 format=3 uid="uid://duesdmxby4flc"]
 
 [ext_resource type="Texture2D" uid="uid://dw0go7e5sj2kw" path="res://assets/sprites/world_tileset.png" id="2_7mlhd"]
 [ext_resource type="PackedScene" uid="uid://calhlxjxs6fau" path="res://scenes/newplayer.tscn" id="2_12uqw"]
+[ext_resource type="PackedScene" uid="uid://b5topp7cq2jf7" path="res://scenes/platform.tscn" id="3_mrfi2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fvs01"]
 texture = ExtResource("2_7mlhd")
@@ -180,6 +181,9 @@ layer_0/tile_data = PackedInt32Array(1, 0, 0, 2, 0, 0, 3, 0, 0, 0, 0, 0, 4, 0, 0
 position = Vector2(34, 0)
 
 [node name="Camera2D" type="Camera2D" parent="Player2"]
-position = Vector2(-27, -11)
+position = Vector2(1, -11)
 zoom = Vector2(4, 4)
 position_smoothing_enabled = true
+
+[node name="AnimatableBody2D" parent="." instance=ExtResource("3_mrfi2")]
+position = Vector2(71, -33)
