@@ -5,7 +5,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qtgn2"]
 size = Vector2(32, 10)
 
-[node name="AnimatableBody2D" type="AnimatableBody2D"]
+[node name="PlatformGrassy" type="AnimatableBody2D"]
+z_index = -1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_52g7m")
@@ -14,3 +15,4 @@ region_rect = Rect2(16, 0, 32, 9)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_qtgn2")
+one_way_collision = true
