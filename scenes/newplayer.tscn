@@ -52,5 +52,6 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+z_index = 5
 position = Vector2(0, -7)
 shape = SubResource("CircleShape2D_vmya0")
