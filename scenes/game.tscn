@@ -221,6 +221,8 @@ position = Vector2(-9, -3)
 [node name="Camera2D" type="Camera2D" parent="Player2"]
 position = Vector2(1, -11)
 zoom = Vector2(4, 4)
+limit_bottom = 120
+limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="PlatformGrassy" parent="." instance=ExtResource("3_mrfi2")]
