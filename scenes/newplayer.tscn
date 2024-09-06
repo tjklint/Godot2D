@@ -37,10 +37,20 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 10.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"run",
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vmya0"]
-radius = 6.0
+radius = 7.0
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
@@ -49,10 +59,10 @@ script = ExtResource("1_c4j6f")
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_6xloq")
-animation = &"idle"
+animation = &"run"
 autoplay = "idle"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 z_index = 500
-position = Vector2(0, -6)
+position = Vector2(0, -8)
 shape = SubResource("CircleShape2D_vmya0")
